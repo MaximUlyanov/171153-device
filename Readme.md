@@ -1,6 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Максим Ульянов](https://up.htmlacademy.ru/htmlcss/18/user/171153).
+* Наставник: [Шамиль Алисултанов](https://htmlacademy.ru/profile/adrenaline).
 
 ---
 
