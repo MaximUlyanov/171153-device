@@ -1,0 +1,296 @@
+/*Подключение шрифтов*/
+
+@font-face {
+  font-family: "Gilroy";
+  src: 
+    local("Gilroy"),
+    url("fonts/gilroyextrabold.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: 
+    local("Gilroy"),
+    url("fonts/gilroylight.woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: 
+    local("Open Sans"),
+    url("fonts/opensans.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: 
+    local("Open Sans"),
+    url("fonts/opensanslight.woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+
+/*Глобальные стили*/
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1240px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: lighter;
+  color: #000000;
+}
+
+/*
+.visually-hidden {
+  position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}*/
+
+body>input[type=radio] {
+  display:none
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: #f7e296;
+}
+
+footer {
+  background-color: #464646;
+}
+
+
+/*Стили взаимодействий*/
+
+a:hover {
+  color: rgba(0,0,0,0.6);
+}
+
+a:active {
+  color: rgba(0,0,0,0.3);
+}
+
+.header-logo:hover,
+.footer-logo:hover,
+.copyright:hover {
+  opacity: 0.6;
+}
+
+.header-logo:active,
+.footer-logo:active,
+.copyright:active {
+  opacity: 0.3;
+}
+
+footer a:hover {
+  color: rgba(255,255,255,0.6);
+}
+
+footer a:active {
+  color: rgba(255,255,255,0.3);
+}
+
+
+/*Общие текстовые стили и стили глвной страницы*/
+
+.write-us input[type=text],
+textarea {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-goods, 
+.nav-right, 
+.btn {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-left,
+.header-right,
+.dropdown-col,
+.main-description p,
+.services p,
+.info .text-descrirtion,
+.main-footer p,
+.main-footer .telephone,
+.footer-user-block a {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 30px;
+}
+
+.header-right,
+.header-left,
+.dropdown-col,
+.footer-user-block a {
+  line-height: 36px;
+}
+
+.number-slide { 
+  font-size: 179px;
+  font-weight: bold;
+} 
+
+.special-caption,
+.services h3,
+.info h3,
+.catalog-main h2{
+  font-size: 47px;
+  font-weight: bold;
+}
+
+.main-features-value {
+  font-size: 36px;
+}
+
+.main-features-type {
+  font-size: 13px;
+}
+
+.categories-items,
+.footer-links a,
+.write-us label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info b {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+footer,
+footer a,
+footer p {
+  color: #ffffff;;
+}
+
+/*Cтили каталога*/
+
+.exit-button {
+  color: rgba(0,0,0,0.3);
+}
+
+.breadcrumbs a{
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: lighter;
+  color: rgba(0,0,0,0.3);
+  line-height: 36px;
+}
+
+.breadcrumbs a:hover:not(:last-child) {
+  color: rgba(0,0,0,0.6);
+}
+
+.breadcrumbs a:active:not(:last-child) {
+  color: rgba(0,0,0,0.1);
+}
+
+.catalog-caption {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.catalog-sorting-type {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 18px;
+}
+
+.catalog-sorting-type a:nth-child(1):hover,
+.catalog-sorting-type a:nth-child(1):active {
+  color: #000000;
+  cursor: text;
+}
+
+
+.catalog-sorting-type a:nth-child(2),
+.catalog-sorting-type a:nth-child(3) {
+  color: rgba(0,0,0,0.3);
+}
+
+.catalog-sorting-type a:hover:not(:first-child) {
+  color: rgba(0,0,0,0.6);
+}
+
+.catalog-sorting-type a:active:not(:first-child) {
+  color: rgba(0,0,0,1);
+}
+
+.form-legend {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.selected-price span {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 27.27px;
+  color: rgba(0,0,0,0.2);
+}
+
+.filter-form label {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item-price {
+  font-size: 16px;
+}
+
+.paginator {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.paginator a:nth-child(3),
+.paginator a:nth-child(4) {
+  color: rgba(0,0,0,0.3);
+}
+
+.paginator a:nth-child(3):hover,
+.paginator a:nth-child(4):hover {
+  color: rgba(0,0,0,0.6);
+}
+
+.paginator a:nth-child(3):active,
+.paginator a:nth-child(4):active {
+  color: #000000;
+}
