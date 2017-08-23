@@ -123,6 +123,13 @@ a:active {
   opacity: 0.3;
 }
 
+.btn, 
+a,
+button,
+label {
+  cursor: pointer;
+}
+
 footer a:hover {
   color: rgba(255,255,255,0.6);
 }
@@ -131,8 +138,13 @@ footer a:active {
   color: rgba(255,255,255,0.3);
 }
 
+.index:hover,
+.index:active {
+  opacity: 1;
+  cursor: default;
+}
 
-/*Общие текстовые стили и стили глвной страницы*/
+/*Общие текстовые стили и стили главной страницы*/
 
 .write-us input[type=text],
 textarea {
@@ -238,6 +250,10 @@ footer p {
   color: rgba(0,0,0,0.1);
 }
 
+.breadcrumbs a:nth-child(3) {
+  cursor: default;
+}
+
 .catalog-caption {
   font-size: 16px;
   font-weight: bold;
@@ -254,7 +270,7 @@ footer p {
 .catalog-sorting-type a:nth-child(1):hover,
 .catalog-sorting-type a:nth-child(1):active {
   color: #000000;
-  cursor: text;
+  cursor: default;
 }
 
 
