@@ -72,6 +72,22 @@ header {
   background-color: #f7e296;
 }
 
+.services {
+  background-color: #e5e5e5;
+}
+
+.catalog-items-header {
+  background-color: #ebebeb;
+}
+
+.filter-form {
+  background-color: #eeeeee;
+}
+
+.paginator {
+   background-color: #ebebeb;
+}
+
 footer {
   background-color: #464646;
 }
@@ -84,6 +100,14 @@ a:hover {
 }
 
 a:active {
+  color: rgba(0,0,0,0.3);
+}
+
+.categories a:hover {
+  color: #000000;
+}
+
+.categories a:active {
   color: rgba(0,0,0,0.3);
 }
 
@@ -280,9 +304,24 @@ footer p {
   text-transform: uppercase;
 }
 
+.paginator a.prev:hover,
+.paginator a.next:hover {
+  color: #000000;
+}
+
+.paginator a.prev:active,
+.paginator a.next:active {
+  color: rgba(0,0,0,0.3);
+}
+
 .paginator a:nth-child(3),
 .paginator a:nth-child(4) {
   color: rgba(0,0,0,0.3);
+}
+
+.paginator a:nth-child(2):hover,
+.paginator a:nth-child(2):active {
+  color: #000000;
 }
 
 .paginator a:nth-child(3):hover,
