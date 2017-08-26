@@ -8,24 +8,24 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <h1 class="visually-hidden">Device - интернет магазин гаджетов</h1>
     <input type="radio" id="special-btn-1" name="special-toggle" checked>
     <input type="radio" id="special-btn-2" name="special-toggle">
     <input type="radio" id="special-btn-3" name="special-toggle">
     <input type="radio" id="services-btn-1" name="services-toggle" checked>
     <input type="radio" id="services-btn-2" name="services-toggle">
     <input type="radio" id="services-btn-3" name="services-toggle">
-	  <header class="main-header">
+    <h1 class="visually-hidden">Device - интернет магазин гаджетов</h1>
+	  <header class="main-header container">
       <a class="header-logo index">
         <img src="img/logo-min.png" width="163" height="36" alt="DEVICE">
       </a>
-      <div class="header-row clearfix">
+      <div class="header-row">
         <form class="header-left" action="https://echo.htmlacademy.ru" method="get">
           <label class="search-icon" for="search"><span class="visually-hidden">Поиск по сайту</span></label>
           <input type="search" class="search" id="search" name="search" placeholder="Поиск по сайту">
           <button type="submit" class="search-btn"><span>Найти</span></button>
         </form>
-        <div class="header-right clearfix">
+        <div class="header-right">
           <div class="user-block-main">
             <a href="login.html">Войти</a>
           </div>
@@ -35,11 +35,11 @@
           </div>
         </div>
       </div>
-      <nav class="main-nav clearfix">
+      <nav class="main-nav">
         <ul class="nav-left">
           <li>
             <a class="catalog-goods" href="catalog.html">Каталог товаров</a>
-            <div class="menu clearfix">
+            <div class="menu">
               <ul class="dropdown-col">
                 <li>
                   <a href="virtual.html" class="menu-item">Виртуальная реальность</a>
@@ -67,7 +67,7 @@
             </div>
           </li>
         </ul>
-        <div class="nav-right clearfix">
+        <div class="nav-right">
           <div class="nav-services">
             <a href="#">Доставка</a>
             <a href="#">Гарантия</a>
@@ -76,95 +76,95 @@
         </div>
       </nav>
 	  </header>
-	  <main class="container">
+	  <main class="main-index">
       <article class="slider container">
         <h2 class="visually-hidden">Спецпредложения</h2>
-        <ul class="slider-btn">
-          <li>
+          <div class="slider-btn">
             <label for="special-btn-1"></label>
-          </li>
-          <li>
             <label for="special-btn-2"></label>
-          </li>
-          <li>
             <label for="special-btn-3"></label>
-          </li>
-        </ul>
-        <section class="special-item slider-first clearfix" id="slide-1">
-          <img src="img/slider-1-png-min.png" width="384" height="486" alt="8-ми метровая селфи-палка">
-          <div class="main-description">
-            <span class="number-slide">01</span>
-            <div class="special-caption">
-              Делай селфи,<br> 
-              как Бен Стиллер!
-            </div>
-            <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
-            <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a class="btn" href="main-selfie-stick.html">Подробнее</a>
-            <table class="main-features">
-              <tr class="main-features-value">
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
-              </tr>
-              <tr class="main-features-type">
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал<td>
-              </tr>
-            </table>
           </div>
-        </section>
-        <section class="special-item slider-second clearfix" id="slide-2">
-          <img src="img/slider-2-png-min.png" width="345" height="485" alt="Мотивирующий браслет">
-          <div class="main-description">
-            <span class="number-slide">02</span>
-            <div class="special-caption">
-              Худеем<br>
-              правильно!
+          <div class="slides">
+					<div class="overflow">
+						<div class="special-items">
+              <section class="special-item slider-first clearfix" id="slide-1">
+                <img src="img/slider-1-png-min.png" width="384" height="486" alt="8-ми метровая селфи-палка">
+                <div class="main-description">
+                  <span class="number-slide">01</span>
+                  <div class="special-caption">
+                    Делай селфи,<br> 
+                    как Бен Стиллер!
+                  </div>
+                  <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
+                  <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                  <a class="btn" href="main-selfie-stick.html">Подробнее</a>
+                  <table class="main-features">
+                    <tr class="main-features-value">
+                      <td>8,5 м</td>
+                      <td>5 кг</td>
+                      <td>Карбон</td>
+                    </tr>
+                    <tr class="main-features-type">
+                      <td>Длина палки</td>
+                      <td>Вес палки</td>
+                      <td>Материал<td>
+                    </tr>
+                  </table>
+                </div>
+              </section>
+              <section class="special-item slider-second clearfix" id="slide-2">
+                <img src="img/slider-2-png-min.png" width="345" height="485" alt="Мотивирующий браслет">
+                <div class="main-description">
+                  <span class="number-slide">02</span>
+                  <div class="special-caption">
+                    Худеем<br>
+                    правильно!
+                  </div>
+                  <p>
+                    Мотивирующие фитнесc-браслеты помогут найти в себе силы
+                    не пропускать занятия и соблюдать диету.
+                  </p>
+                  <a class="btn" href="main-bracelet.html">Подробнее</a>
+                  <table class="main-features">
+                    <tr class="main-features-value">
+                      <td>48 часов</td>
+                    </tr>
+                    <tr class="main-features-type">
+                      <td>Без подзарядки</td>
+                    </tr>
+                  </table>
+                </div>
+              </section>
+              <section class="special-item slider-third clearfix" id="slide-3">
+                <img src="img/slider-3-png-min.png" width="526" height="334" alt="Квадрокоптер">
+                <div class="main-description">
+                  <span class="number-slide">03</span>
+                  <div class="special-caption">
+                    Порхает как бабочка,
+                    жалит как пчела!
+                  </div>
+                  <p>
+                    Этот обычный, на первый взгляд, квадрокоптер оснащен
+                    мощным лазером, замаскированным под стандартную камеру.
+                  </p>
+                  <a class="btn" href="main-quadrocopter.html">Подробнее</a>
+                  <table class="main-features">
+                    <tr class="main-features-value">
+                      <td>800 м</td>
+                      <td>50 м</td>
+                    </tr>
+                    <tr class="main-features-type">
+                      <td>Дальность полета</td>
+                      <td>Радиус поражения</td>
+                    </tr>
+                  </table>
+                </div>
+              </section>
             </div>
-            <p>
-                Мотивирующие фитнесc-браслеты помогут найти в себе силы
-                не пропускать занятия и соблюдать диету.
-            </p>
-            <a class="btn" href="main-bracelet.html">Подробнее</a>
-            <table class="main-features">
-              <tr class="main-features-value">
-                <td>48 часов</td>
-              </tr>
-              <tr class="main-features-type">
-                <td>Без подзарядки</td>
-              </tr>
-            </table>
-          </div>
-        </section>
-        <section class="special-item slider-third clearfix" id="slide-3">
-          <img src="img/slider-3-png-min.png" width="526" height="334" alt="Квадрокоптер">
-          <div class="main-description">
-            <span class="number-slide">03</span>
-            <div class="special-caption">
-              Порхает как бабочка,
-              жалит как пчела!
             </div>
-            <p>
-              Этот обычный, на первый взгляд, квадрокоптер оснащен
-            мощным лазером, замаскированным под стандартную камеру.
-            </p>
-            <a class="btn" href="main-quadrocopter.html">Подробнее</a>
-            <table class="main-features">
-              <tr class="main-features-value">
-                <td>800 м</td>
-                <td>50 м</td>
-              </tr>
-              <tr class="main-features-type">
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
-              </tr>
-            </table>
-          </div>
-        </section>
+        </div>
       </article>
-      <section class="categories">
+      <section class="categories container">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories-items">
           <li><a href="virtual.html"><span>Виртуальная реальность</span></a></li>
@@ -177,39 +177,37 @@
       </section>
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
-        <div class="container clearfix">
-          <ul class="services-items">
-            <li>
-              <label class="btn" for="services-btn-1">Доставка</label>
-            </li>
-            <li>
-              <label class="btn" for="services-btn-2">Гарантия</label>
-            </li>
-            <li>
-              <label class="btn" for="services-btn-3">Кредит</label>
-            </li>
-          </ul>
-        <section class="services-item delivery" id="services-delivery">
-            <h3>Доставка</h3>
-            <p>
+        <div class="services-container container">
+          <div class="services-section">
+            <div class="services-items">
+                <label class="btn" for="services-btn-1">Доставка</label>
+                <label class="btn" for="services-btn-2">Гарантия</label>
+                <label class="btn" for="services-btn-3">Кредит</label>
+            </div>
+          </div>
+          <div class="services-section">
+            <section class="services-item delivery" id="services-delivery">
+                <h3>Доставка</h3>
+                <p>
               Мы с удовольствием доставим ваш товар прямо к вашему
               подъезду совершенно бесплатно! Ведь мы неплохо 
               заработаем, поднимая его на ваш этаж.
-            </p>
-        </section>
-        <section class="services-item warranty" id="services-warranty">
-            <h3>Гарантия</h3>
-            <p>
+                </p>
+            </section>
+            <section class="services-item warranty" id="services-warranty">
+                <h3>Гарантия</h3>
+                <p>
               Если из-за возгорания купленного у нас товара у вас сгорит дом - не перживайте, мы выдадим вам новый.<br>
               Товар, не дом конечно же.
-            </p>
-        </section>
-        <section class="services-item credit" id="services-credit">
-            <h3>Кредит</h3>
-            <p>
+                </p>
+            </section>
+            <section class="services-item credit" id="services-credit">
+                <h3>Кредит</h3>
+                <p>
               Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашнго банка, разумеется.
-            </p>
-        </section>
+                </p>
+            </section>
+          </div>
         </div>
       </section>
       <section class="partners container">
@@ -228,7 +226,7 @@
         </a>
       </section>
       
-      <section class="info container clearfix">
+      <section class="info container">
         <section class="info-about-us">
           <h3>О нас</h3>
           <p class="text-descrirtion">
@@ -262,13 +260,15 @@
         </section>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="footer">
       <h2 class="visually-hidden">Ссылки и контакты</h2>
-      <div class="container clearfix">
+      <div class="main-footer container">
         <div class="footer-left">
-          <a class="footer-logo index">
-            <img src="img/logo_footer-min.png" width="163" height="36" alt="DEVICE">
-          </a>
+          <div class="footer-logo index">
+            <a class="index">
+              <img src="img/logo_footer-min.png" width="163" height="36" alt="DEVICE">
+            </a>
+          </div>
           <p>
             г. Москва, ул. Строителей, 15
           </p>
@@ -280,9 +280,9 @@
             <a href="contacts.html">Контакты</a>
           </div>
           <div class="footer-social">
-            <a class="social-btn social-btn-fb" href="https://www.facebook.com/"><span class="visually-hidden">Фейсбук</span></a>
-            <a class="social-btn social-btn-inst" href="https://www.instagram.com/"><span class="visually-hidden">Инстаграм</span></a>
-            <a class="social-btn social-btn-tw" href="https://twitter.com/"><span class="visually-hidden">Твиттер</span></a>
+            <a class="social-btn social-btn-fb" href="https://www.facebook.com/"><span>Фейсбук</span></a>
+            <a class="social-btn social-btn-inst" href="https://www.instagram.com/"><span>Инстаграм</span></a>
+            <a class="social-btn social-btn-tw" href="https://twitter.com/"><span>Твиттер</span></a>
           </div>
         </div>
         <div class="footer-right">
