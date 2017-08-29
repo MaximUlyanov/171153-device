@@ -37,31 +37,31 @@
       </div>
       <nav class="main-nav">
         <ul class="nav-left">
-          <li class="li-one">
+          <li class="li-one plus">
             <a class="catalog-goods" href="catalog.html">Каталог товаров</a>
             <div class="menu">
               <ul class="dropdown-col">
                 <li>
-                  <a href="virtual.html" class="menu-item">Виртуальная реальность</a>
+                  <a href="#" class="menu-item">Виртуальная реальность</a>
                 </li>
                 <li>
-                  <a href="monopods.html" class="menu-item">Моноподы для селфи</a>
+                  <a href="#" class="menu-item">Моноподы для селфи</a>
                 </li>
                 <li>
-                  <a href="cameras.html" class="menu-item">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul class="dropdown-col">
-                <li>
-                  <a href="bracelets.html" class="menu-item">Фитнес-браслеты</a>
-                </li>
-                <li>
-                  <a href="clocks.html" class="menu-item">Умные часы</a>
+                  <a href="#" class="menu-item">Экшн-камеры</a>
                 </li>
               </ul>
               <ul class="dropdown-col">
                 <li>
-                  <a href="quadrocopters.html" class="menu-item">Квадрокоптеры</a>
+                  <a href="#" class="menu-item">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a href="#" class="menu-item">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="dropdown-col">
+                <li>
+                  <a href="#" class="menu-item">Квадрокоптеры</a>
                 </li>
               </ul>
             </div>
@@ -99,7 +99,7 @@
                   </div>
                   <p class="first">Самая длинная палка для селфи доступна в нашем магазине.</p>
                   <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                  <a class="btn" href="main-selfie-stick.html">Подробнее</a>
+                  <a class="btn" tabindex="-1" href="#">Подробнее</a>
                   <table class="main-features">
                     <tr class="main-features-value">
                       <td>8,5 м</td>
@@ -123,10 +123,10 @@
                     правильно!
                   </div>
                   <p>
-                    Мотивирующие фитнесc-браслеты помогут найти в себе силы<br>
+                    Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
                     не пропускать занятия и соблюдать диету.
                   </p>
-                  <a class="btn" href="main-bracelet.html">Подробнее</a>
+                  <a class="btn" tabindex="-1" href="#">Подробнее</a>
                   <table class="main-features">
                     <tr class="main-features-value">
                       <td>48 часов</td>
@@ -149,7 +149,7 @@
                     Этот обычный, на первый взгляд, квадрокоптер оснащен
                     мощным лазером, замаскированным под стандартную камеру.
                   </p>
-                  <a class="btn" href="main-quadrocopter.html">Подробнее</a>
+                  <a class="btn" tabindex="-1" href="#">Подробнее</a>
                   <table class="main-features">
                     <tr class="main-features-value">
                       <td>800 м</td>
@@ -168,25 +168,42 @@
       </article>
       <section class="categories container">
         <h2 class="visually-hidden">Категории товаров</h2>
-        <ul class="categories-items">
-          <li><a href="virtual.html"><span>Виртуальная реальность</span></a></li>
-          <li><a href="monopods.html"><span>Моноподы для селфи</span></a></li>
-          <li><a href="cameras.html"><span>Экшн-камеры</span></a></li>
-          <li><a href="bracelets.html"><span>Фитнес-браслеты</span></a></li>
-          <li><a href="clocks.html"><span>Умные часы</span></a></li>
-          <li><a href="quadrocopters.html"><span>Квадракоптеры</span></a></li>
-        </ul>
+        <div class="categories-items">
+          <li>
+            <a class="virtual categories-item" href="#"><span>Виртуальная реальность</span></a>
+          </li>
+          <li>
+            <a class="monopods categories-item" href="#"><span>Моноподы<br> для селфи</span></a>
+          </li>
+          <li>
+            <a class="cameras categories-item" href="#"><span>Экшн-камеры</span></a>
+          </li>
+          <li>
+            <a class="bracelets categories-item" href="#"><span>Фитнес-браслеты</span></a>
+          </li>
+          <li>
+            <a class="clocks categories-item" href="#"><span>Умные часы</span></a>
+          </li>
+          <li>
+            <a class="quadrocopters categories-item" href="#"><span>Квадракоптеры</span></a>
+          </li>
+        </div>
       </section>
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
-        <div class="services-container container">
-          <div class="services-section">
-            <div class="services-items">
-                <label class="btn" for="services-btn-1">Доставка</label>
-                <label class="btn" for="services-btn-2">Гарантия</label>
-                <label class="btn" for="services-btn-3">Кредит</label>
-            </div>
-          </div>
+        <div class="services-container container clearfix">
+            <ul class="services-btn">
+              <li>
+                <label for="services-btn-1" id="btn-4">Доставка</label>
+              </li>
+              <li>
+                <label for="services-btn-2" id="btn-5">Гарантия</label>
+              </li>
+              <li>
+                <label for="services-btn-3" id="btn-6">Кредит</label>
+              </li>
+            </ul>
+          <div class="">
           <div class="services-section">
             <section class="services-item delivery" id="services-delivery">
                 <h3>Доставка</h3>
@@ -210,24 +227,28 @@
                 </p>
             </section>
           </div>
+          </div>
         </div>
       </section>
       <section class="partners container">
         <h2 class="visually-hidden">Наши партнеры</h2>
-        <a class="partner-link" href="http://www.dji.com/">
+        <a class="partner-link" href="#">
+          <img src="img/logo-1-2-min.png" width="260" height="100" alt="DJI">
           <img src="img/logo-1-min.png" width="260" height="100" alt="DJI">
         </a>
-        <a class="partner-link" href="http://www.sp-gadgets.com/">
+        <a class="partner-link" href="#">
+          <img src="img/logo-2-2-min.png" width="260" height="100" alt="SPGadgets">
           <img src="img/logo-2-min.png" width="260" height="100" alt="SPGadgets">
         </a>
-        <a class="partner-link" href="http://gopro.ru/">
+        <a class="partner-link" href="#">
+          <img src="img/logo-3-2-min.png" width="260" height="100" alt="GoPro">
           <img src="img/logo-3-min.png" width="260" height="100" alt="GoPro">
         </a>
-        <a class="partner-link" href="https://www.htcvive.com/">
+        <a class="partner-link" href="#">
+          <img src="img/logo-4-2-min.png" width="260" height="100" alt="VIVE">
           <img src="img/logo-4-min.png" width="260" height="100" alt="VIVE">
         </a>
       </section>
-      
       <section class="info container">
         <section class="info-about-us">
           <h3>О нас</h3>
@@ -239,7 +260,7 @@
           </p>
           <ul class="transport-company">
             <li>
-              <b>Деловые линии</b>
+              <b>Деловые Линии</b>
             </li>
             <li>
               <b>Автотрейдинг</b>
@@ -248,14 +269,16 @@
               <b>ЖелДорЭкспедиция</b>
             </li>
           </ul>
-          <a class="btn" href="about-us.html">Подробнее о нас</a>
+          <a class="btn" href="#">Подробнее о нас</a>
         </section>
         <section class="info-contacts">
           <h3>Контакты</h3>
           <p class="text-descrirtion">
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
+          <a href="#">
           <img src="img/map-jpg-min.png" width="560" height="222" alt="Мы находимся по адресу: г. Москва, ул. Строителей, 15">
+          </a>
           <p>
             <a class="btn" href="write-us.html">Напишите нам</a>
           </p>
@@ -277,24 +300,24 @@
         </div>
         <div class="footer-center">
           <div class="footer-links">
-            <a href="delivery.html">Доставка</a>
-            <a href="warranty.html">Гарантия</a>
-            <a href="contacts.html">Контакты</a>
+            <a href="#">Доставка</a>
+            <a href="#">Гарантия</a>
+            <a href="#">Контакты</a>
           </div>
           <div class="footer-social">
-            <a class="social-btn social-btn-fb" href="https://www.facebook.com/"><span>Фейсбук</span></a>
-            <a class="social-btn social-btn-inst" href="https://www.instagram.com/"><span>Инстаграм</span></a>
-            <a class="social-btn social-btn-tw" href="https://twitter.com/"><span>Твиттер</span></a>
+            <a class="social-btn social-btn-fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+            <a class="social-btn social-btn-inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
+            <a class="social-btn social-btn-tw" href="#"><span class="visually-hidden">Твиттер</span></a>
           </div>
         </div>
         <div class="footer-right">
           <div class="footer-user-block">
-            <a class="footer-login" href="login.html">Войти</a>
-            <a class="footer-compare" href="compare.html">Сравнить</a>
-            <a class="footer-basket" href="basket.html">Корзина</a>
+            <a class="footer-login" href="#">Войти</a>
+            <a class="footer-compare" href="#">Сравнить</a>
+            <a class="footer-basket" href="#">Корзина</a>
           </div>
           <div class="telephone">
-            Тел.: +7 (495) 495-95-95
+            <a class="telephone-number" href="tel:+7 (495) 495 95 95">Тел.: +7 (495) 495-95-95</a>
           </div>
           <div class="copyright">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
