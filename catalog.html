@@ -98,7 +98,7 @@
                  </div>
                 </div>
                <div class="catalog-sorting-right">
-                 <a class="up" href="#" class="up"><span class="visually-hidden">По возрастанию</span></a>
+                 <a class="up" href="#"><span class="visually-hidden">По возрастанию</span></a>
                  <a class="douwn" href="#"><span class="visually-hidden">По убыванию</span></a>
                </div>
              </div>
@@ -126,36 +126,35 @@
                 <fieldset>
                   <legend class="form-legend">Цвет</legend>
                   <p>
-                  <input class="filter-checkbox" type="checkbox" name="black" id="black" checked>
-                  <label for="black">Черный</label>
+                    <input class="filter-checkbox" type="checkbox" name="black" id="black" checked>
+                    <label for="black">Черный</label>
                   </p>
                   <p>
-                  <input class="filter-checkbox" type="checkbox" name="white" id="white">
-                  <label for="white">Белый</label>
+                    <input class="filter-checkbox" type="checkbox" name="white" id="white">
+                    <label for="white">Белый</label>
                   </p>
                   <p>
-                  <input class="filter-checkbox" type="checkbox" name="blue" id="blue" checked>
-                  <label for="blue">Синий</label>
+                    <input class="filter-checkbox" type="checkbox" name="blue" id="blue" checked>
+                    <label for="blue">Синий</label>
                   </p>
                   <p>
-                  <input class="filter-checkbox" type="checkbox" name="red" id="red" checked>
-                  <label for="red">Красный</label>
+                    <input class="filter-checkbox" type="checkbox" name="red" id="red" checked>
+                    <label for="red">Красный</label>
                   </p>
                   <p>
-                  <p>
-                  <input class="filter-checkbox" type="checkbox" name="pink" id="pink">
-                  <label for="pink">Розовый</label>
+                    <input class="filter-checkbox" type="checkbox" name="pink" id="pink">
+                    <label for="pink">Розовый</label>
                   </p>
                 </fieldset>
                 <fieldset>
                   <legend class="form-legend">Bluetooth</legend>
                   <p>
-                  <input class="filter-radio" type="radio" value="Есть" name="bluetooth" id="bth-yes" checked>
-                  <label for="bth-yes">Есть</label>
+                    <input class="filter-radio" type="radio" value="Есть" name="bluetooth" id="bth-yes" checked>
+                    <label for="bth-yes">Есть</label>
                   </p>
                   <p>
-                  <input class="filter-radio" type="radio" value="Нет" name="bluetooth" id="bth-no">
-                  <label for="bth-no">Нет</label>
+                    <input class="filter-radio" type="radio" value="Нет" name="bluetooth" id="bth-no">
+                    <label for="bth-no">Нет</label>
                   </p>
                 </fieldset>
                 <button class="btn" type="submit">Показать</button>
@@ -165,8 +164,12 @@
               <section class="items-article">
                 <h3 class="visually-hidden">Товары</h3>
                 <article class="goods">
-                  <div>
-                    <img src="img/item-1-jpg-min.png" width="360" height="380" alt="Любительская селфи-палка">
+                  <div class="image-goods">
+                    <div class="mask">
+                      <a class="btn to-cart" href="#">В корзину</a>
+                      <a class="to-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                    <img class="image-good" src="img/item-1-jpg-min.png" width="360" height="380" alt="Любительская селфи-палка">
                   </div>
                   <div class="item-description">
                     <a class="item-name" href="#">Любительская селфи-палка</a>
@@ -174,8 +177,12 @@
                   </div>
                 </article>
                 <article class="goods">
-                  <div>
-                    <img src="img/item-2-jpg-min.png" width="360" height="380" alt="Профессиональная селфи-палка">
+                  <div class="image-goods">
+                    <div class="mask">
+                      <a class="btn to-cart" href="#">В корзину</a>
+                      <a class="to-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                    <img class="image-good" src="img/item-2-jpg-min.png" width="360" height="380" alt="Профессиональная селфи-палка">
                   </div>
                   <div class="item-description">
                     <a class="item-name" href="#">Профессиональная<br> селфи-палка</a>
@@ -183,8 +190,12 @@
                   </div>
                 </article>
                 <article class="goods">
-                  <div>
-                    <img src="img/item-3-jpg-min.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+                  <div class="image-goods">
+                    <div class="mask">
+                      <a class="btn to-cart" href="#">В корзину</a>
+                      <a class="to-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                    <img class="image-good" src="img/item-3-jpg-min.png" width="360" height="380" alt="Непотопляемая селфи-палка">
                   </div>
                   <div class="item-description">
                     <a class="item-name" href="#">Непотопляемая селфи-палка</a>
@@ -192,8 +203,12 @@
                   </div>
                 </article>
                 <article class="goods">
-                  <div>
-                    <img src="img/item-4-jpg-min.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
+                  <div class="image-goods">
+                    <div class="mask">
+                      <a class="btn to-cart" href="#">В корзину</a>
+                      <a class="to-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                    <img class="image-good" src="img/item-4-jpg-min.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
                   </div>
                   <div class="item-description">
                     <a class="item-name" href="#">Селфи-палка «Следуй за мной»</a>
@@ -246,7 +261,7 @@
             <a class="footer-basket" href="basket.html">Корзина</a>
           </div>
           <div class="telephone">
-            <a class="telephone-number" href="tel:+7 (495) 495 95 95">Тел.: +7 (495) 495-95-95</a>
+            <a class="telephone-number" href="tel:+7(495)4959595">Тел.: +7 (495) 495-95-95</a>
           </div>
           <div class="copyright">
             <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">

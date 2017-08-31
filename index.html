@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>DEVICE - интернет магазин гаджетов</title>
-     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -23,7 +23,7 @@
         <form class="header-left" action="https://echo.htmlacademy.ru" method="get">
           <label class="search-icon" for="search"><span class="visually-hidden">Поиск по сайту</span></label>
           <input type="search" class="search" id="search" name="search" placeholder="Поиск по сайту">
-          <button type="submit" class="search-btn"><span>Найти</span></button>
+          <button type="submit" class="search-btn">Найти</button>
         </form>
         <div class="header-right">
           <div class="user-block-main">
@@ -72,25 +72,25 @@
             <a href="#">Доставка</a>
             <a href="#">Гарантия</a>
           </div>
-          <a class="nav-contacts" href="#">Контакты</a>
+          <div class="nav-contacts">
+            <a href="#">Контакты</a>
+          </div>
         </div>
       </nav>
 	  </header>
 	  <main class="main-index">
       <article class="slider container">
         <h2 class="visually-hidden">Спецпредложения</h2>
-          <div class="slider-btn">
-            <label for="special-btn-1" id="btn-1"></label>
-            <label for="special-btn-2" id="btn-2"></label>
-            <label for="special-btn-3" id="btn-3"></label>
-          </div>
-          <div class="slides">
+        <div class="slider-btn">
+          <label for="special-btn-1" id="btn-1"></label>
+          <label for="special-btn-2" id="btn-2"></label>
+          <label for="special-btn-3" id="btn-3"></label>
+        </div>
+        <div class="slides">
 					<div class="overflow">
-						<div class="special-items">
-              <section class="special-item slider-first clearfix" id="slide-1">
-                <div>
+				    <div class="special-items">
+              <section class="special-item slider-first" id="slide-1">
                 <img src="img/slider-1-png-min.png" width="384" height="486" alt="8-ми метровая селфи-палка">
-                </div>
                 <div class="main-description">
                   <span class="number-slide">01</span>
                   <div class="special-caption">
@@ -114,7 +114,7 @@
                   </table>
                 </div>
               </section>
-              <section class="special-item slider-second clearfix" id="slide-2">
+              <section class="special-item slider-second" id="slide-2">
                 <img src="img/slider-2-png-min.png" width="345" height="485" alt="Мотивирующий браслет">
                 <div class="main-description">
                   <span class="number-slide">02</span>
@@ -163,12 +163,12 @@
                 </div>
               </section>
             </div>
-            </div>
+          </div>
         </div>
       </article>
       <section class="categories container">
         <h2 class="visually-hidden">Категории товаров</h2>
-        <div class="categories-items">
+        <ul class="categories-items">
           <li>
             <a class="virtual categories-item" href="#"><span>Виртуальная реальность</span></a>
           </li>
@@ -187,46 +187,44 @@
           <li>
             <a class="quadrocopters categories-item" href="#"><span>Квадракоптеры</span></a>
           </li>
-        </div>
+        </ul>
       </section>
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
-        <div class="services-container container clearfix">
-            <ul class="services-btn">
-              <li>
-                <label for="services-btn-1" id="btn-4">Доставка</label>
-              </li>
-              <li>
-                <label for="services-btn-2" id="btn-5">Гарантия</label>
-              </li>
-              <li>
-                <label for="services-btn-3" id="btn-6">Кредит</label>
-              </li>
-            </ul>
-          <div class="">
+        <div class="services-container container">
+          <ul class="services-btn">
+            <li>
+              <label for="services-btn-1" id="btn-4">Доставка</label>
+            </li>
+            <li>
+              <label for="services-btn-2" id="btn-5">Гарантия</label>
+            </li>
+            <li>
+              <label for="services-btn-3" id="btn-6">Кредит</label>
+            </li>
+          </ul>
           <div class="services-section">
             <section class="services-item delivery" id="services-delivery">
                 <h3>Доставка</h3>
                 <p>
-              Мы с удовольствием доставим ваш товар прямо к вашему
-              подъезду совершенно бесплатно! Ведь мы неплохо 
-              заработаем, поднимая его на ваш этаж.
+                  Мы с удовольствием доставим ваш товар прямо к вашему
+                  подъезду совершенно бесплатно! Ведь мы неплохо 
+                  заработаем, поднимая его на ваш этаж.
                 </p>
             </section>
             <section class="services-item warranty" id="services-warranty">
                 <h3>Гарантия</h3>
                 <p>
-              Если из-за возгорания купленного у нас товара у вас сгорит дом - не перживайте, мы выдадим вам новый.<br>
-              Товар, не дом конечно же.
+                  Если из-за возгорания купленного у нас товара у вас сгорит дом - не перживайте, мы выдадим вам новый.<br>
+                  Товар, не дом конечно же.
                 </p>
             </section>
             <section class="services-item credit" id="services-credit">
                 <h3>Кредит</h3>
                 <p>
-              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашнго банка, разумеется.
+                  Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашнго банка, разумеется.
                 </p>
             </section>
-          </div>
           </div>
         </div>
       </section>
@@ -277,7 +275,7 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
           <a href="#">
-          <img src="img/map-jpg-min.png" width="560" height="222" alt="Мы находимся по адресу: г. Москва, ул. Строителей, 15">
+            <img src="img/map-jpg-min.png" width="560" height="222" alt="Мы находимся по адресу: г. Москва, ул. Строителей, 15">
           </a>
           <p>
             <a class="btn" href="write-us.html">Напишите нам</a>
@@ -317,7 +315,7 @@
             <a class="footer-basket" href="#">Корзина</a>
           </div>
           <div class="telephone">
-            <a class="telephone-number" href="tel:+7 (495) 495 95 95">Тел.: +7 (495) 495-95-95</a>
+            <a class="telephone-number" href="tel:+7(495)4959595">Тел.: +7 (495) 495-95-95</a>
           </div>
           <div class="copyright">
             <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
@@ -328,35 +326,42 @@
       </div>
     </footer>
  
-    <div class="write-us">
+    <section class="write-us">
       <button class="close" type="button"><span class="visually-hidden">Закрыть</span></button>
-      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="write-us-name">
-           Ваше имя:
-            <input type="text" name="name" placeholder="Представтесь, пожалуйста">
-          </label>
-        </p>
-        <p>
-          <label class="write-us-email">
-            Ваш e-mail:
-            <input type="text" name="email" placeholder="Для отправки ответа">
-          </label>
-        </p>
-        <p>
-        <label class="write-us-letter">
-          Текст письма:
-          <textarea name="letter" placeholder="В свободной форме"></textarea>
-        </label>
-        </p>
-        <p>
-        <button class="btn" type="submit">Отправить</button>
-        </p>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="identifiers">
+          <div class="input-container">
+            <label for="name" class="write-us-name">Ваше имя:</label>
+            <p>
+              <input type="text" id="name" name="name" placeholder="Представтесь, пожалуйста">
+            </p>
+          </div>
+          <div class="input-container">
+            <label for="email" class="write-us-email">Ваш e-mail:</label>
+            <p>
+              <input type="text" id="email" name="email" placeholder="Для отправки ответа">
+            </p>
+          </div>
+        </div>
+        <div class="letter">
+          <div class="input-container">
+            <label for="letter" class="write-us-letter">Текст письма:</label>
+            <p>
+              <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
+            </p>
+          </div>
+          <p>
+          <button class="btn" type="submit">Отправить</button>
+          </p>
+        </div>
       </form>
-    </div>
-    <div class="map">
-      <button class="close" type="button"><span class="visually-hidden">Закрыть</span></button>
-    </div>
+    </section >
+    <section  class="map">
+      <div class="map-wraper">
+        <button class="close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877994!2d37.52742931615179!3d55.68703098053587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1504138428635" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </section >
    <script type="text/javascript" charset="utf-8" async src="js/"></script>
   </body>
 </html>
