@@ -113,10 +113,11 @@
                   <legend class="form-legend">Стоимость</legend>
                   <div class="range-controls">
                     <div class="scale">
-                      <div class="bar"></div>
+                      <div class="bar">
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
+                      </div>
                     </div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
                   </div>
                   <div class="selected-price">
                     <span>от 0</span>
@@ -127,34 +128,34 @@
                   <legend class="form-legend">Цвет</legend>
                   <p>
                     <input class="filter-checkbox" type="checkbox" name="black" id="black" checked>
-                    <label for="black">Черный</label>
+                    <label id="for-black" for="black">Черный</label>
                   </p>
                   <p>
                     <input class="filter-checkbox" type="checkbox" name="white" id="white">
-                    <label for="white">Белый</label>
+                    <label id="for-white" for="white">Белый</label>
                   </p>
                   <p>
                     <input class="filter-checkbox" type="checkbox" name="blue" id="blue" checked>
-                    <label for="blue">Синий</label>
+                    <label id="for-blue" for="blue">Синий</label>
                   </p>
                   <p>
                     <input class="filter-checkbox" type="checkbox" name="red" id="red" checked>
-                    <label for="red">Красный</label>
+                    <label id="for-red" for="red">Красный</label>
                   </p>
                   <p>
                     <input class="filter-checkbox" type="checkbox" name="pink" id="pink">
-                    <label for="pink">Розовый</label>
+                    <label id="for-pink" for="pink">Розовый</label>
                   </p>
                 </fieldset>
                 <fieldset>
                   <legend class="form-legend">Bluetooth</legend>
                   <p>
                     <input class="filter-radio" type="radio" value="Есть" name="bluetooth" id="bth-yes" checked>
-                    <label for="bth-yes">Есть</label>
+                    <label  id="yes" for="bth-yes">Есть</label>
                   </p>
                   <p>
                     <input class="filter-radio" type="radio" value="Нет" name="bluetooth" id="bth-no">
-                    <label for="bth-no">Нет</label>
+                    <label id="no" for="bth-no">Нет</label>
                   </p>
                 </fieldset>
                 <button class="btn" type="submit">Показать</button>
@@ -169,7 +170,9 @@
                       <a class="btn to-cart" href="#">В корзину</a>
                       <a class="to-compare" href="#">Добавить к сравнению</a>
                     </div>
-                    <img class="image-good" src="img/item-1-jpg-min.png" width="360" height="380" alt="Любительская селфи-палка">
+                    <div class="image-good">
+                      <img src="img/item-1-jpg-min.png" width="360" height="380" alt="Любительская селфи-палка">
+                    </div>
                   </div>
                   <div class="item-description">
                     <a class="item-name" href="#">Любительская селфи-палка</a>
@@ -182,7 +185,9 @@
                       <a class="btn to-cart" href="#">В корзину</a>
                       <a class="to-compare" href="#">Добавить к сравнению</a>
                     </div>
-                    <img class="image-good" src="img/item-2-jpg-min.png" width="360" height="380" alt="Профессиональная селфи-палка">
+                    <div class="image-good">
+                      <img src="img/item-2-jpg-min.png" width="360" height="380" alt="Профессиональная селфи-палка">
+                    </div>
                   </div>
                   <div class="item-description">
                     <a class="item-name" href="#">Профессиональная<br> селфи-палка</a>
@@ -195,7 +200,9 @@
                       <a class="btn to-cart" href="#">В корзину</a>
                       <a class="to-compare" href="#">Добавить к сравнению</a>
                     </div>
-                    <img class="image-good" src="img/item-3-jpg-min.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+                    <div class="image-good">
+                      <img src="img/item-3-jpg-min.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+                    </div>
                   </div>
                   <div class="item-description">
                     <a class="item-name" href="#">Непотопляемая селфи-палка</a>
@@ -208,7 +215,10 @@
                       <a class="btn to-cart" href="#">В корзину</a>
                       <a class="to-compare" href="#">Добавить к сравнению</a>
                     </div>
-                    <img class="image-good" src="img/item-4-jpg-min.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
+                    <div class="image-good">
+                      <img  src="img/item-4-jpg-min.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
+                      <span>New</span>
+                    </div>
                   </div>
                   <div class="item-description">
                     <a class="item-name" href="#">Селфи-палка «Следуй за мной»</a>
