@@ -7,6 +7,7 @@ var userName = form.querySelector(".form-name");
 var Mail = form.querySelector(".form-email");
 var Letter = form.querySelector(".form-letter");
 var storage = localStorage.getItem("userName");
+var storageMail = localStorage.getItem("Mail");
 var mapLink = document.querySelector(".map");
 var mappopap = document.querySelector(".modal-map");
 var mapClose = mappopap.querySelector(".close");
@@ -20,6 +21,12 @@ letterLink.addEventListener("click", function (evt) {
     Mail.focus();
   } else {
     userName.focus();
+  }
+  if (storageMail) {
+    Mail.value = Storage;
+    Letter.focus();
+  } else {
+    Mail.focus();
   }
 });
 
@@ -47,6 +54,7 @@ form.addEventListener("submit", function (evt) {
     }
   } else {
       localStorage.setItem("userName", userName.value);
+      localStorage.setItem("Mail", Mail.value);
     }
 });
 
