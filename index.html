@@ -37,8 +37,8 @@
       </div>
       <nav class="main-nav">
         <ul class="nav-left">
-          <li class="li-one plus">
-            <a class="catalog-goods" href="catalog.html">Каталог товаров</a>
+          <li class="li-one">
+            <a class="catalog-goods plus" href="catalog.html">Каталог товаров</a>
             <div class="menu">
               <ul class="dropdown-col">
                 <li>
@@ -137,7 +137,7 @@
                   </table>
                 </div>
               </section>
-              <section class="special-item slider-third clearfix" id="slide-3">
+              <section class="special-item slider-third" id="slide-3">
                 <img src="img/slider-3-png-min.png" width="526" height="334" alt="Квадрокоптер">
                 <div class="main-description">
                   <span class="number-slide">03</span>
@@ -228,7 +228,7 @@
           </div>
         </div>
       </section>
-      <section class="partners container">
+      <section class="partners">
         <h2 class="visually-hidden">Наши партнеры</h2>
         <a class="partner-link" href="#">
           <img src="img/logo-1-2-min.png" width="260" height="100" alt="DJI">
@@ -254,7 +254,7 @@
             Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           </p>
           <p class="text-descrirtion">
-            Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+            Мы можем доставить ваш товар в самые отдаленные точки &nbsp;&nbsp;&nbsp; России! DEVICE работает со многими транспортными компаниями:
           </p>
           <ul class="transport-company">
             <li>
@@ -274,11 +274,11 @@
           <p class="text-descrirtion">
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
-          <a href="#">
+          <a class="map" href="map.html">
             <img src="img/map-jpg-min.png" width="560" height="222" alt="Мы находимся по адресу: г. Москва, ул. Строителей, 15">
           </a>
           <p>
-            <a class="btn" href="write-us.html">Напишите нам</a>
+            <a class="btn write-us-btn" href="write-us.html">Напишите нам</a>
           </p>
         </section>
       </section>
@@ -312,7 +312,7 @@
           <div class="footer-user-block">
             <a class="footer-login" href="#">Войти</a>
             <a class="footer-compare" href="#">Сравнить</a>
-            <a class="footer-basket" href="#">Корзина</a>
+            <a class="footer-cart" href="#">Корзина</a>
           </div>
           <div class="telephone">
             <a class="telephone-number" href="tel:+7(495)4959595">Тел.: +7 (495) 495-95-95</a>
@@ -333,13 +333,13 @@
           <div class="input-container">
             <label for="name" class="write-us-name">Ваше имя:</label>
             <p>
-              <input type="text" id="name" name="name" placeholder="Представтесь, пожалуйста">
+              <input class="form-name" type="text" id="name" name="name" placeholder="Представтесь, пожалуйста">
             </p>
           </div>
           <div class="input-container">
             <label for="email" class="write-us-email">Ваш e-mail:</label>
             <p>
-              <input type="text" id="email" name="email" placeholder="Для отправки ответа">
+              <input class="form-email" type="text" id="email" name="email" placeholder="Для отправки ответа">
             </p>
           </div>
         </div>
@@ -347,7 +347,7 @@
           <div class="input-container">
             <label for="letter" class="write-us-letter">Текст письма:</label>
             <p>
-              <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
+              <textarea class="form-letter" id="letter" name="letter" placeholder="В свободной форме"></textarea>
             </p>
           </div>
           <p>
@@ -356,12 +356,11 @@
         </div>
       </form>
     </section >
-    <section  class="map">
-      <div class="map-wraper">
+    <section  class="modal-map">
         <button class="close" type="button"><span class="visually-hidden">Закрыть</span></button>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877994!2d37.52742931615179!3d55.68703098053587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1504138428635" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
     </section >
-   <script type="text/javascript" charset="utf-8" async src="js/"></script>
+    <div class="modal-overlay"></div>
+   <script src="js/script.js"></script>
   </body>
 </html>
