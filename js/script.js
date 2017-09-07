@@ -22,12 +22,6 @@ letterLink.addEventListener("click", function (evt) {
   } else {
     userName.focus();
   }
-  if (storageMail) {
-    Mail.value = Storage;
-    Letter.focus();
-  } else {
-    Mail.focus();
-  }
 });
 
 exit.addEventListener("click", function (evt) {
