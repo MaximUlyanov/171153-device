@@ -1231,12 +1231,17 @@ services-container {
   opacity: 0.2;
 }
 
-.partners a {
+.partners .partner-link {
   position: relative;
   display: inline-block;
+  margin-right: 40px;
   margin-bottom: 30px;
   width: 260px;
   vertical-align: baseline;
+}
+
+.partners .partner-link:nth-of-type(4n) {
+  margin-right: 0;
 }
 
 
@@ -1248,10 +1253,8 @@ services-container {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 65px;
-  padding-left: 52px;
-  padding-right: 52px;
 }
 
 .info section {
