@@ -65,16 +65,16 @@ window.addEventListener("keydown", function (evt) {
 });
 
 mapLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    overlay.classList.add("modal-overlay-on");
-    mappopap.classList.add("popap");
-  });
+  evt.preventDefault();
+  overlay.classList.add("modal-overlay-on");
+  mappopap.classList.add("popap");
+});
 
 mapClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    overlay.classList.remove("modal-overlay-on");
-    mappopap.classList.remove("popap");
-  });
+  evt.preventDefault();
+  overlay.classList.remove("modal-overlay-on");
+  mappopap.classList.remove("popap");
+});
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
