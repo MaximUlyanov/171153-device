@@ -5,14 +5,8 @@
     <title>DEVICE - интернет магазин гаджетов</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-  </head>
+  </head> 
   <body>
-    <input type="radio" id="special-btn-1" name="special-toggle" checked>
-    <input type="radio" id="special-btn-2" name="special-toggle">
-    <input type="radio" id="special-btn-3" name="special-toggle">
-    <input type="radio" id="services-btn-1" name="services-toggle" checked>
-    <input type="radio" id="services-btn-2" name="services-toggle">
-    <input type="radio" id="services-btn-3" name="services-toggle">
     <h1 class="visually-hidden">Device - интернет магазин гаджетов</h1>
 	  <header class="main-header container">
       <a class="header-logo index">
@@ -80,10 +74,13 @@
 	  <main class="main-index">
       <article class="slider container">
         <h2 class="visually-hidden">Спецпредложения</h2>
+        <input class="visually-hidden"  type="radio" id="special-btn-1" name="special-toggle" checked>
+        <input class="visually-hidden"  type="radio" id="special-btn-2" name="special-toggle">
+        <input class="visually-hidden"  type="radio" id="special-btn-3" name="special-toggle">
         <div class="slider-btn">
-          <label for="special-btn-1" id="btn-1"></label>
-          <label for="special-btn-2" id="btn-2"></label>
-          <label for="special-btn-3" id="btn-3"></label>
+          <label for="special-btn-1" id="btn-1" tabindex="0"></label>
+          <label for="special-btn-2" id="btn-2" tabindex="0"></label>
+          <label for="special-btn-3" id="btn-3" tabindex="0"></label>
         </div>
         <div class="slides">
 					<div class="overflow">
@@ -98,7 +95,7 @@
                   </div>
                   <p class="first">Самая длинная палка для селфи доступна в нашем магазине.</p>
                   <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                  <a class="btn" tabindex="-1" href="#">Подробнее</a>
+                  <a class="btn" href="#">Подробнее</a>
                   <table class="main-features">
                     <tr class="main-features-value">
                       <td>8,5 м</td>
@@ -125,7 +122,7 @@
                     Мотивирующие фитнес-браслеты помогут найти в себе силы &nbsp;&nbsp;&nbsp;&nbsp;
                     не пропускать занятия и соблюдать диету.
                   </p>
-                  <a class="btn" tabindex="-1" href="#">Подробнее</a>
+                  <a class="btn" href="#">Подробнее</a>
                   <table class="main-features">
                     <tr class="main-features-value">
                       <td>48 часов</td>
@@ -148,7 +145,7 @@
                     Этот обычный, на первый взгляд, квадрокоптер оснащен&nbsp;
                     мощным лазером, замаскированным под стандартную камеру.
                   </p>
-                  <a class="btn" tabindex="-1" href="#">Подробнее</a>
+                  <a class="btn" href="#">Подробнее</a>
                   <table class="main-features">
                     <tr class="main-features-value">
                       <td>800 м</td>
@@ -191,15 +188,18 @@
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <div class="services-container container">
+          <input class="visually-hidden"  type="radio" id="services-btn-1" name="services-toggle" checked>
+          <input class="visually-hidden"  type="radio" id="services-btn-2" name="services-toggle">
+          <input class="visually-hidden"  type="radio" id="services-btn-3" name="services-toggle">
           <ul class="services-btn">
             <li>
-              <label for="services-btn-1" id="btn-4">Доставка</label>
+              <label class="services-label-1" for="services-btn-1" id="btn-4" tabindex="0">Доставка</label>
             </li>
             <li>
-              <label for="services-btn-2" id="btn-5">Гарантия</label>
+              <label class="services-label-2" for="services-btn-2" id="btn-5" tabindex="0">Гарантия</label>
             </li>
             <li>
-              <label for="services-btn-3" id="btn-6">Кредит</label>
+              <label class="services-label-3" for="services-btn-3" id="btn-6" tabindex="0">Кредит</label>
             </li>
           </ul>
           <div class="services-section">
@@ -291,7 +291,7 @@
               <img src="img/logo_footer-min.png" width="163" height="36" alt="DEVICE">
             </a>
           </div>
-          <p>
+          <p class="footer-p-index">
             г. Москва, ул. Строителей, 15
           </p>
         </div>
