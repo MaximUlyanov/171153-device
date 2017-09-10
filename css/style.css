@@ -211,18 +211,6 @@ footer a:active {
   cursor: default;
 }
 
-.main-header .li-one:hover {
-  z-index: 1;
-}
-
-.nav-left > li:hover .menu,
-.catalog-goods:focus ~ .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 5;
-}
-
 
 /*** Хедер ***/
 
@@ -277,18 +265,6 @@ footer a:active {
 .index:active {
   opacity: 1;
   cursor: default;
-}
-
-.main-header .li-one:hover {
-  z-index: 1;
-}
-
-.nav-left > li:hover .menu,
-.nav-left > li:focus .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 5;
 }
 
 /* Хедер, стилизация иконок */
@@ -884,6 +860,19 @@ a.next:active {
   word-spacing: 0.5px;
 }
 
+.main-header .li-one:hover {
+  z-index: 1;
+}
+
+.catalog-goods:hover ~ .menu,
+.catalog-goods:focus ~ .menu,
+.menu:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 5;
+}
+
 .dropdown-col:nth-of-type(2) { 
   padding-left: 4px;
 }
@@ -1099,7 +1088,7 @@ a.next:active {
   max-width: 180px;
 }
 
-.main-features-value td.carbon {
+td.carbon {
   padding-right: 19px;
   min-width: 120px;
 }
@@ -1329,19 +1318,22 @@ services-container {
   padding-left: 10px;
 }
  
-.delivery,.credit,.warranty{
-  background-image:url(../img/delivery.svg);
-  background-repeat:no-repeat;
-  background-position:568px 27px;
+.delivery,
+.credit,
+.warranty {
+  background-image: url(../img/delivery.svg);
+  background-repeat: no-repeat;
+  background-position: 568px 27px;
 }
-.credit,.warranty{
-  background-image:url(../img/warranty.svg);
-  background-position:553px 2px;
+.credit,
+.warranty {
+  background-image: url(../img/warranty.svg);
+  background-position: 553px 2px;
 }
 
 .credit{
-  background-image:url(../img/credit.svg);
-  background-position:543px 1px;
+  background-image: url(../img/credit.svg);
+  background-position: 543px 1px;
 }
 
 #services-btn-1:checked ~ .services-section #services-delivery, 
