@@ -48,7 +48,7 @@ body
     font-family: 'Gilroy', 'Arial', sans-serif;
     font-weight: 300;
 
-    min-width: 1240px;
+    min-width: 1200px;
     margin: 0;
     padding: 0;
 
@@ -1475,6 +1475,13 @@ li > .categories-item:focus
     background: url('../img/popular-2.svg') no-repeat 50% 100%;
 }
 
+.monopods span 
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-right: 35px;        
+}
+
 .cameras
 {
     background: url('../img/popular-3.svg') no-repeat 50%;
@@ -2263,6 +2270,13 @@ a.footer-cart::before
 
     vertical-align: center;
     letter-spacing: .3px;
+}
+
+.item-name-prof 
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-right: 35px; 
 }
 
 .item-price
