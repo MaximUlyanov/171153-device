@@ -520,10 +520,6 @@ footer a:active
 
 .services
 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
     min-height: 288px;
     margin-bottom: 92px;
 
@@ -1512,6 +1508,10 @@ li > .categories-item:focus
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .services-btn
@@ -1522,13 +1522,12 @@ li > .categories-item:focus
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    float: left;
-        flex-direction: column;
+    flex-direction: column;
 
     width: 277px;
+    min-height: 238px;
     margin: 0;
     padding: 0;
-    padding-bottom: 46px;
 
     list-style: none;
 
